@@ -8,7 +8,9 @@ class Solution
 public:
     void duplicateZeros(vector<int> &arr)
     {
-        int fast = 0, slow = 0;
+        int n = arr.size();
+        for ()
+            int fast = 0, slow = 0;
         while (fast < n)
         {
         }
