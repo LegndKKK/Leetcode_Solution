@@ -22,5 +22,13 @@ public:
             d.push_back(x % 10);
             x /= 10;
         }
+        for (int i = 0; i < d.size(); i++)
+        {
+            if (x > INT_MAX / 10)
+                return 0;
+            x *= 10;
+            x += d[i];
+        }
+        return sign ? 0 - x : x;
     }
 };
