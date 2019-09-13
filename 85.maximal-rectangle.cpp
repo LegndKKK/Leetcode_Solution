@@ -12,7 +12,6 @@ public:
         if (!r || !c)
             return 0;
         vector<int> hist(c, 0), front(c, 0), end(c, 0);
-        ;
         for (int i = 0; i < r; i++)
         {
             front.assign(c, 0);
