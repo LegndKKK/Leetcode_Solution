@@ -24,11 +24,8 @@ public:
 class PeekingIterator : public Iterator
 {
 public:
-	const vector<int> temp;
-	Iterator it(temp);
 	PeekingIterator(const vector<int> &nums) : Iterator(nums)
 	{
-
 		// Initialize any member here.
 		// **DO NOT** save a copy of nums and manipulate it directly.
 		// You should only use the Iterator interface methods.
@@ -37,16 +34,19 @@ public:
 	// Returns the next element in the iteration without advancing the iterator.
 	int peek()
 	{
-		Iterator it(cur + 1);
+		//copy constructor
+		return Iterator(*this).next();
 	}
 
 	// hasNext() and next() should behave the same as in the Iterator interface.
 	// Override them if needed.
 	int next()
 	{
+		return Iterator::next();
 	}
 
 	bool hasNext() const
 	{
+		return Iterator::hasNext();
 	}
 };
