@@ -25,7 +25,7 @@ public:
             dfs(x->left);
             if (x->val <= target)
             {
-                minq.push_back(x->val);
+                minq.p  ush_back(x->val);
                 while (minq.size() > k)
                     minq.pop_front();
             }
