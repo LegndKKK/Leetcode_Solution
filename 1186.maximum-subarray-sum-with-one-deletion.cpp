@@ -5,11 +5,11 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    int maximumSum(vector<int>& arr) {
-        
+    int maximumSum(vector<int> &arr)
+    {
     }
 };
 // @lc code=end
-
